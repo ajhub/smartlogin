@@ -2,8 +2,12 @@
 
 session_start();
 
-require("connection.php");
-
+$con=mysql_connect( 'tunnel.pagodabox.com:3306','brook','XC2ZLPEn');
+	if(!$con)
+	{
+		die("Connection Error");
+	}
+	
 $db=mysql_select_db("master_users",$connection);
 if(!$db)
 	die("Error in db delection..");
