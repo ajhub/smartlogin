@@ -4,11 +4,6 @@ session_start();
 
 require ("connection.php");
 
-$db=mysql_select_db('master_users',$connection);
-if(!$db)
-	die("Error in db delection..");
-?>
-
 <html>
 
 <?php
