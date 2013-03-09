@@ -5,7 +5,7 @@
 		die("Connection Error");
 	}
 	
-	$db=mysql_select_db('master_users',$connection);
+	$db=mysql_select_db('smartlogindb',$connection);
     if(!$db)
 	   die("Error in db delection..");
 
