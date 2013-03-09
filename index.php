@@ -4,6 +4,8 @@ session_start();
 
 require ("connection.php");
 
+?>
+
 <html>
 
 <?php
