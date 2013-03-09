@@ -5,9 +5,9 @@
 		die("Connection Error");
 	}
 	
-	$db=mysql_select_db('smartlogindb',$connection);
+    $db=mysql_select_db('smartlogindb',$connection);
     if(!$db)
-	   die("Error in db delection..");
+	   die("Error in db delection..");	
 
 	
 ?>
