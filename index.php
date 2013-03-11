@@ -105,9 +105,9 @@ else
 				Registration for developers.
 				
 					<form name ="websitesregistration" action="websiteregister.php" method = "post">
-					Website Name <input type = "text" name "tb_wsname">
+					Website Name <input type = "text" name = "tb_wsname">
 					<br>
-					Website URL <input type = "text" name "tb_wsurl">
+					Website URL <input type = "text" name = "tb_wsurl">
 					<br>
 					<input type = "submit" value = "Register">
 					</form>

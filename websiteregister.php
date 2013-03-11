@@ -18,6 +18,6 @@ if(!empty($_POST['tb_wsname']) && !empty($_POST['tb_wsurl']))
         die("Query problem");
      
 }
-
 ?>
 
+<meta http-equiv="refresh" content="0;index.php">
