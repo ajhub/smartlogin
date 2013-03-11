@@ -37,6 +37,7 @@
 	$mobiledb = 'smartlogin_users';
 	$mobiledb_user = 'username';
 	$mobiledb_device = 'deviceid';
+	$mobiledb_key = 'secretkey';	
 	
 	
 	
