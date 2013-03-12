@@ -20,7 +20,7 @@ $query = " SELECT * FROM master_websites ";
 			$types[] = $row;
 		}
 	}
-$output = array('websitesdata' => $type[]);
+$output = array('websitesdata' => $type);
 echo json_encode($output);
 mysql_close();
 		 
