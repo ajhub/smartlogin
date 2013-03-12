@@ -15,7 +15,9 @@ $query = " SELECT * FROM master_websites ";
          for ($x = 0; $x < mysql_num_rows($result); $x++)
 		 {
 			$row = mysql_fetch_assoc($result);  
-			echo $row['type']; 
+			echo $row['ws_id']; 
+			echo $row['ws_name'];
+			echo "<br>";
 		 }
 	}
 echo "------";
