@@ -66,7 +66,7 @@ else
 						<li><a href="#" rel="view4">Registration</a></li>
 						<li><a href="#" rel="view5">About</a></li>
 						
-						<form class="navbar-form pull-left" method="post" style="padding-left :300px;" action="index.php" >
+						<form class="navbar-form pull-left" method="post" style="padding-left :250px;" action="index.php" >
 							<input type="text" class="span2 offset2" name = "tb_userid">
 							<input type="password" class="span2" name = "tb_pass">
 							<button type="submit" class="btn">Admin Login</button>
