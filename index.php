@@ -52,8 +52,10 @@ else
     <link href="style/tabcontent.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background:#F6F9FC;">
-    <div style="width: 500px; margin: 0 auto; padding: 120px 0 40px; font: 0.85em arial;">
-        <ul class="tabs" persist="true">
+    <div style="width: 950px; margin: 10px 10px 10px 10px; padding: 10px 20px 10px 20px; font: 0.85em arial;">
+	    <h1 style="font-weight:bold; font: normal 40px Verdana;">Smart<text style="color:#1E90FF;">Login</text></h1>
+  
+		<ul class="tabs" persist="true">
             <li><a href="#" rel="view1">Wiki</a></li>
             <li><a href="#" rel="view2">Documentation</a></li>
             <li><a href="#" rel="view3">Downloads</a></li>

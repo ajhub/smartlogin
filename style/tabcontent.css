@@ -23,22 +23,23 @@ ul.tabs li a
     text-decoration: none;
     position: relative;
     z-index: 1;
-    padding: 7px 22px;
-    color: #000;
+    padding: 7px 80px;
+    color: #778899;
     outline:none;
-    background: #F6F6F9;
-    border:1px solid #CCC;
-    border-right:0;
+    //background: #F6F6F9;
+    //border:1px solid #CCC;
+    //border-right:0;
 }
 /*Note: IE8 and earlier doesn't support li:last-child. You have to add another class to the last tab (LI) and specify its border-right as below.*/
 ul.tabs li:last-child a
 {
-    border-right:1px solid #CCC;
+    //border-right:1px solid #CCC;
 }
   
         
 ul.tabs li a:hover
 {
+    
     color: #000;
     background: white;
 }
@@ -47,10 +48,11 @@ ul.tabs li.selected a
 {
     /*selected tab style */
     top: 0px;
-    font-weight:bold;
+    //font-weight:bold;
     background: #FFF;
-    border-bottom: 1px solid #FFF;
-    color: #000;
+    //border-bottom: 1px solid #FFF;
+    color: #1E90FF;
+	border-bottom:1px solid #1E90FF;
 }
         
         
@@ -67,5 +69,6 @@ div.tabcontent
 
 div.tabcontents
 {
-    border-top: 1px solid #CCC; padding: 30px 10px;
+    //border-top: 1px solid #CCC; 
+	padding: 30px 100px 100px 100px;
 }
