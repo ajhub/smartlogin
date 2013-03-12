@@ -48,53 +48,92 @@ else
 <html>
 <head>
     <title>Tabbed Content</title>
-    <script src="tabcontent.js" type="text/javascript"></script>
-    <link href="style/tabcontent.css" rel="stylesheet" type="text/css" />
+    <script src="js/tabcontent.js" type="text/javascript"></script>
+	<script src="js/bootstrap.js" type="text/javascript"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
-<body style="background:#F6F9FC;">
-    <div style="width: 950px; margin: 10px 10px 10px 10px; padding: 10px 20px 10px 20px; font: 0.85em arial;">
-	    <h1 style="font-weight:bold; font: normal 40px Verdana;">Smart<text style="color:#1E90FF;">Login</text></h1>
-  
-		<ul class="tabs" persist="true">
-            <li><a href="#" rel="view1">Wiki</a></li>
-            <li><a href="#" rel="view2">Documentation</a></li>
-            <li><a href="#" rel="view3">Downloads</a></li>
-            <li><a href="#" rel="view4">Registration</a></li>
-        </ul>
+<body style="background:white;">
+    		
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<a class="brand" href="#">Smart<text style="color:#1E90FF;">Login.</text></a>
+					<ul class="nav" persist="true">
+						<li><a href="#" rel="view1">Home</a></li>
+						<li><a href="#" rel="view2">Documentation</a></li>
+						<li><a href="#" rel="view3">Downloads</a></li>
+						<li><a href="#" rel="view4">Registration</a></li>
+						<li><a href="#" rel="view5">About</a></li>
+					</ul>
+			</div>
+		</div>
+		
         <div class="tabcontents">
+		<br><br><br>
             <div id="view1" class="tabcontent">
-                <b>What ? Why ? </b>
-                <p> ... </p>
-                
+                <div class="hero-unit">
+					<h1>Smart<text style="color:#1E90FF;">Login</h1>
+					    <br>
+						<p>A more secured way of loggin in, using your smartphones. 
+						No more worries, if you are on a public machine, or network.
+						No need to remember passwords.</p>
+						<p>
+						<br><br>
+						<a class="btn btn-info btn-large">
+						User ? Download the app.
+						</a>
+						<a class="btn btn-success btn-large">
+						Website Developer ?  Register with us.
+						</a>
+						</p>
+				</div>     
             </div>
-            <div id="view2" class="tabcontent">
-                <b>How to set up?</b>
-                <p>				 
-				 
-				1. Download the library from here.
-				<br>
-				2. Ok, still figuring out wether this one really deserves to be a step.	
-				<br>
-				3. Edit the configuration file of the library.
-				<br>
-                config.php
+        
+			<div id="view2" class="tabcontent">
+			
+			
+		   <div class="well">    
+			<div style="padding : 10px 10px 10px 10px;">	
+				<b>How to set up?</b>
+                <p>	
+				
+				<div class="alert alert-info"> 
+				Download the library from here.
+				</div>
+	
+				<div class="alert alert-info"> 
+				Ok, still figuring out wether this one really deserves to be a step.
+				</div>
+				
+				<div class="alert alert-info"> 
+				Edit the configuration file of the library | config.php
 				<br>
 				Just need to change some values, so that the scripts can acceess your websites database. 
 				<br>
 				You'l get it as you go through the config.php file.
-				<br>
-				4. Whom do you trust the most on this earth.? I know you must thinking about yourself , pretty boostful but fine with us.
+				</div>
+			
+				<div class="alert alert-info"> 
+				Whom do you trust the most on this earth.? I know you must thinking about yourself , pretty boostful but fine with us.
 				So go ahead, place your login mechanism or watever you know it as ,in <loginmech.php>. You'l be briefed more about it in the file itself.
-				<br>
-				5. Almost done. We said it was easy.
+				</div>
+				
+				<div class="alert alert-info"> 
+				Almost done. We said it was easy.
 				Place the library in your websites root directory. Place SmartLogin icon on your login page, and direct it to www.yourwebsite.com/smartloginlibrary/qrlogin.php
-				<br>
-				6. Register your website with us so that we can update the mobile app with your data.
-				<br>
-				7. Now delete all the data your website has, and we mean all everything, all tables, all files.
+				</div>
+				
+				<div class="alert alert-info"> 
+				Register your website with us so that we can update the mobile app with your data.
+				</div>
+				
+				<div class="alert alert-info"> 
+				Now delete all the data your website has, and we mean all everything, all tables, all files.
 				<br>
 				Ok stop abusing , kidding, you are all ready to go. Your users will praise you for protecting them from those inhuman keyloggers.    </p>
-            </div>
+				</div>
+			</div>
+			</div>
+			</div>
             <div id="view3" class="tabcontent">
                 <b>We keep it open source</b>
                 <p> 
@@ -117,10 +156,18 @@ else
 				</p>                
             </div>
         </div>
-        <br /><br />
-     </div>
+        <br/><br/>
+		
+		<div class="navbar navbar-fixed-bottom navbar-inverse" style="height=100px;">
+			<div class="navbar-inner">
+			<center>
+				<text style="color:white;"> Make A Difference</text>
+			</center>
+			</div>
+		</div>
 </body>
 </html>
+
 
 <?php
 }
