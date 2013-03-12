@@ -12,7 +12,9 @@ $query = " SELECT * FROM master_websites ";
     else
     {
          $row = mysql_fetch_array($result);
-         for ($x = 0; $x < mysql_num_rows($result); $x++)
+         echo $row;
+		 echo "***";
+		 for ($x = 0; $x < mysql_num_rows($result); $x++)
 		 {
 			$row = mysql_fetch_assoc($result);  
 			echo $row['ws_id']; 
