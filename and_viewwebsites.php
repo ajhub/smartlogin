@@ -11,18 +11,10 @@ $query = " SELECT * FROM master_websites ";
         die("Connection Error");
     else
     {
-         $row = mysql_fetch_array($result);
-         echo $row;
-		 echo "***";
-		 for ($x = 0; $x < mysql_num_rows($result); $x++)
-		 {
-			$row = mysql_fetch_assoc($result);  
-			echo $row['ws_id']; 
-			echo $row['ws_name'];
-			echo "<br>";
-		 }
+         $row = mysql_fetch_array($result);        
 	}
-echo "------";
-echo $row;	
+$output = array('websitesdata' => $row);
+echo json_encode($output);
+mysql_close();
 		 
 ?>
