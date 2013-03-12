@@ -11,9 +11,16 @@ $query = " SELECT * FROM master_websites ";
         die("Connection Error");
     else
     {
-         $row = mysql_fetch_array($result);        
+         //$row = mysql_fetch_array($result);
+
+		 $types = array();
+
+		while(($row =  mysql_fetch_assoc($result))) 
+		{
+			$types[] = $row;
+		}
 	}
-$output = array('websitesdata' => $row);
+$output = array('websitesdata' => $type[]);
 echo json_encode($output);
 mysql_close();
 		 
