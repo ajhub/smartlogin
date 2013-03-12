@@ -115,25 +115,25 @@ else
 				</div>
 	
 				<div class="alert alert-info"> 
-				Ok, still figuring out wether this one really deserves to be a step.
+				Ok, mmm,still figuring out wether this one really deserves to be a step,till then lets see what next
 				</div>
 				
 				<div class="alert alert-info"> 
 				Edit the configuration file of the library | config.php
 				<br>
-				Just need to change some values, so that the scripts can acceess your websites database. 
+				Just need to change some values, so that the scripts can acceess your website's database. 
 				<br>
 				You'l get it as you go through the config.php file.
 				</div>
 			
 				<div class="alert alert-info"> 
-				Whom do you trust the most on this earth.? I know you must thinking about yourself , pretty boostful but fine with us.
-				So go ahead, place your login mechanism or watever you know it as ,in <loginmech.php>. You'l be briefed more about it in the file itself.
+				Whom do you trust the most on this earth.? I know you must be thinking about yourself only, pretty boastful but fine with us.
+				So go ahead, place your OWN login mechanism or watever you know it as ,in loginmech.php. You'l be briefed more about it in the file itself.
 				</div>
 				
 				<div class="alert alert-info"> 
 				Almost done. We said it was easy.
-				Place the library in your websites root directory. Place SmartLogin icon on your login page, and direct it to www.yourwebsite.com/smartloginlibrary/qrlogin.php
+				Place the library in your website's root directory. Place SmartLogin icon on your login page, and direct it to www.yourwebsite.com/smartloginlibrary/qrlogin.php
 				</div>
 				
 				<div class="alert alert-info"> 
@@ -141,9 +141,11 @@ else
 				</div>
 				
 				<div class="alert alert-info"> 
-				Now delete all the data your website has, and we mean all everything, all tables, all files.
+				Now delete all the data your website has, and by all we mean everything, all tables, all files.
 				<br>
-				Ok stop abusing , kidding, you are all ready to go. Your users will praise you for protecting them from those inhuman keyloggers.    </p>
+				Ok stop abusing , kidding, you are all ready to go. Your users will praise you for protecting them from those inhuman keyloggers, thanks to us.
+				What ???? Only you can be boastfull ?? Naahhh  ;) :P ..
+				</p>
 				</div>
 			</div>
 			</div>
