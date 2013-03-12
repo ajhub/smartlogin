@@ -72,19 +72,23 @@ else
             <div id="view1" class="tabcontent">
                 <div class="hero-unit">
 					<h1>Smart<text style="color:#1E90FF;">Login</h1>
+					   <h1>Smart<text style="color:#1E90FF;">Login</h1>
 					    <br>
-						<p>A more secured way of loggin in, using your smartphones. 
-						No more worries, if you are on a public machine, or network.
-						No need to remember passwords.</p>
 						<p>
+						Ever compromised your passwords because you logged in into a website from a public machine?
+						Well, no worries. Now with SmartLogin you can trigger login from your smartphone to any public machine, without
+						using the keyboard on public machine to type passwords. In short, SmartLogin is an anti keylogger solution.<br>
+						Websites can provide SmartLogin by using the SmartLogin library. It's pretty much easy to set up.
+						</p>
 						<br><br>
 						<a class="btn btn-info btn-large">
-						User ? Download the app.
+						User ? Download the app
 						</a>
+						
 						<a class="btn btn-success btn-large">
-						Website Developer ?  Register with us.
+						Developer ? Register with us
 						</a>
-						</p>
+						
 				</div>     
             </div>
         
