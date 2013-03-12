@@ -44,12 +44,14 @@ else
 ?>
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
     <title>Tabbed Content</title>
     <script src="js/tabcontent.js" type="text/javascript"></script>
 	<script src="js/bootstrap.js" type="text/javascript"></script>
+
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body style="background:white;">
@@ -63,6 +65,14 @@ else
 						<li><a href="#" rel="view3">Downloads</a></li>
 						<li><a href="#" rel="view4">Registration</a></li>
 						<li><a href="#" rel="view5">About</a></li>
+						
+						<form class="navbar-form pull-left" method="post" style="padding-left :300px;" action="index.php" >
+							<input type="text" class="span2 offset2" name = "tb_userid">
+							<input type="password" class="span2" name = "tb_pass">
+							<button type="submit" class="btn">Admin Login</button>
+						</form>				
+						
+						<li><a href="smartloginlibrary/qrlogin.php" >SmartLogin</a></li>
 					</ul>
 			</div>
 		</div>
@@ -72,7 +82,7 @@ else
             <div id="view1" class="tabcontent">
                 <div class="hero-unit">
 					<h1>Smart<text style="color:#1E90FF;">Login</h1>
-					   <h1>Smart<text style="color:#1E90FF;">Login</h1>
+					   
 					    <br>
 						<p>
 						Ever compromised your passwords because you logged in into a website from a public machine?
@@ -97,7 +107,7 @@ else
 			
 		   <div class="well">    
 			<div style="padding : 10px 10px 10px 10px;">	
-				<b>How to set up?</b>
+				<h3>How to set up?</h3>
                 <p>	
 				
 				<div class="alert alert-info"> 
