@@ -84,6 +84,7 @@ else
 									<br>
 									<li class="divider"></li>
 									<li><a href="smartloginlibrary/qrlogin.php"><h4>SmartLogin</h4></a></li>
+								</form>
 								</ul>
 								
 						</li>

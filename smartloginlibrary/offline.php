@@ -30,8 +30,9 @@
 						<br><br>
 						<center>
 							<form name="input" action="offlogin.php" method="post">
-								Username  <input type="text" name="username"><br>
-								OTP Key  <input type="password" name="pin"><br>
+								<text style="color:white;"> Username </text> <input type="text" name="username"><br>
+								<text style="color:white;"> OTP Key </text> <input type="password" name="pin"><br>
+				
 								<input type="submit" value="Submit">
 							</form>	
 						</center>				
