@@ -175,22 +175,57 @@ else
             </div>
             
 			<div id="view4" class="tabcontent">
-                <b>You are about to do some good deed.. Congratulations..!!</b>
-                <p>
-					Registration for developers.
-				
+                
+				<div class="well-login" style="background-color:white">
+				<div class="progress progress-success progress-striped">
+					<div class="bar" style="width: 100%"></div>
+				</div>
+				<h3>Registration for developers</h3>
+					
+					You are about to do some good deed.. Congratulations..!!
+				    <hr>
 					<form name ="websitesregistration" action="websiteregister.php" method = "post">
-					Website Name <input type = "text" name = "tb_wsname">
-					<br>
-					Website URL <input type = "text" name = "tb_wsurl">
-					<br>
-					<input type = "submit" value = "Register">
+						<div style="padding : 0px 0px 0px 150px;">
+							Website Name <input type = "text" name = "tb_wsname">
+							<br>
+							Website URL <input type = "text" name = "tb_wsurl">
+							<br>
+							Email ID <input type = "text" name = "tb_wsemail">
+							<br>
+							<input type = "submit" value = "Register">
+						</div>
 					</form>
 				
-				</p>                
+				</div>
+				
+				
+				<br>
+				
+				
+				<div class="well-login" style="background-color:white;">
+				
+				<div class="progress progress-danger progress-striped">
+					<div class="bar" style="width: 100%"></div>
+				</div>
+				
+				<h3>Deregistration for developers</h3>
+					
+					Incase you are insane , and you want to pull off this service from your website
+                    <hr>
+					<form name ="websitesderegistration" action="websitederegister.php" method = "post">
+						<div style="padding : 0px 0px 0px 150px;">
+							Secret Key <input type = "text" name = "tb_wsname">
+							<br>
+							<input type = "submit" value = "DeRegister">
+						</div>
+					</form>
+				
+				</div>
+				             
             </div>
         </div>
-        <br/><br/>
+   
+		<br/><br/>
 		
 		<div class="navbar navbar-fixed-bottom navbar-inverse" style="height=100px;">
 			<div class="navbar-inner">
@@ -201,6 +236,7 @@ else
 		</div>
 </body>
 </html>
+
 
 
 
