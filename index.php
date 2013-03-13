@@ -45,6 +45,7 @@ else
 
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -176,7 +177,7 @@ else
             
 			<div id="view4" class="tabcontent">
                 
-				<div class="well-login" style="background-color:white">
+				<div class="well-login" style="margin-left:25%; margin-right:25%; background-color:white">
 				<div class="progress progress-success progress-striped">
 					<div class="bar" style="width: 100%"></div>
 				</div>
@@ -202,7 +203,7 @@ else
 				<br>
 				
 				
-				<div class="well-login" style="background-color:white;">
+				<div class="well-login" style="margin-left:25%; margin-right:25%; background-color:white;">
 				
 				<div class="progress progress-danger progress-striped">
 					<div class="bar" style="width: 100%"></div>
