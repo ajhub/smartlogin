@@ -7,7 +7,7 @@
 	$SqlPass = 'XC2ZLPEn';
 	
 	// Enter your mysql database name here
-	$SqlDBname='smartlogindb';
+	$SqlDBname='<dbname>';
 	
 	//Making connections and selecting your db for furhter operations.
 	$con=mysql_connect($SqlHost,$SqlUser,$SqlPass);
@@ -21,12 +21,12 @@
 		die("Error in db delection..");
 	
 
-	//$ico_loc='<link rel="shortcut icon"  href="/smartloginlibrary/favicon.ico">';
+	$ico_loc='<link rel="shortcut icon"  href="/smartloginlibrary/favicon.ico">';
 	
-        // Set following variables to your db's table, which will store random nos and usernames
+    // Set following variables to your db's table, which will store random nos and usernames
 	// See step ** for more details.
 	
-	$randomdb = 'random';
+	$randomdb = 'randomd';
 	$randomdb_random = 'randomno';
 	$randomdb_user = 'username';
 	
@@ -34,12 +34,16 @@
 	// Set following variables to your db's table, which will store devices registered by users.
 	// See step ** for more details.
 	
-	$mobiledb = 'smartlogin_users';
+	$mobiledb = 'mobiledb';
+	$mobiledb_device = 'device';
+	$mobiledb_key = 'key' ;	
 	$mobiledb_user = 'username';
+
+	$mobiledb = 'smartlogin_users';
 	$mobiledb_device = 'deviceid';
+	$mobiledb_user = 'username';
 	$mobiledb_key = 'secretkey';	
-	
-	
+
 	
 	// Set following variables to your db's table, which stores usernames and passswords
 	$logindb = 'master_users';
