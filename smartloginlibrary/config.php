@@ -26,7 +26,7 @@
     // Set following variables to your db's table, which will store random nos and usernames
 	// See step ** for more details.
 	
-	$randomdb = 'randomd';
+	$randomdb = 'random';
 	$randomdb_random = 'randomno';
 	$randomdb_user = 'username';
 	
