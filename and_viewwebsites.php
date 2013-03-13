@@ -4,7 +4,7 @@ session_start();
 
 require ("connection.php");
 
-$query = " SELECT * FROM master_websites ";
+$query = " SELECT WS_ID,WS_NAME,WS_URL FROM master_websites ";
      $result=mysql_query($query,$connection);
      
 	if(!$result)
