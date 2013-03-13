@@ -7,7 +7,7 @@
 	$SqlPass = 'XC2ZLPEn';
 	
 	// Enter your mysql database name here
-	$SqlDBname='<dbname>';
+	$SqlDBname='smartlogin';
 	
 	//Making connections and selecting your db for furhter operations.
 	$con=mysql_connect($SqlHost,$SqlUser,$SqlPass);
