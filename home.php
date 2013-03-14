@@ -42,14 +42,14 @@ if(!empty($_SESSION['Username']))
 						<li class="dropdown" style=" float: right; margin-right: 0;">
 								
 								<a class="dropdown-toggle" style=" float: right; margin-right: 0;" data-toggle="dropdown" href="#">
-									echo $username <b class="caret"></b>
+									<?php echo $username ?><b class="caret"></b>
 								</a>
 							
-								<ul class="dropdown-menu">
-								<form class="navbar-form pull-left" method="post" style="padding: 10px 30px 30px 30px;" action="logout.php" >		
-									<li><a href="smartloginlibrary/qrlogin.php">Logout</a></li>
+							<ul class="dropdown-menu">
+								<form name = "logout" class="navbar-form pull-left" method="post" style="padding: 10px 30px 30px 30px;" action="logout.php" >
+									<li><a href="logout.php">Logout</a></li>
 								</form>
-								</ul>
+							</ul>
 								
 						</li>
 						
