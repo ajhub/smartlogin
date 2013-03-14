@@ -11,14 +11,14 @@
 	if($num == 1)
 	{
 		$row = mysql_fetch_assoc($result);
-		$username = $row[$mobiledb_user];
+		$username = $row["$mobiledb_user"];
 		
 		$query="UPDATE ".randomdb." SET ".$randommdb_user." = '$username' where ".$randomdb_random." = '$random'";
 		$result = mysql_query($query);
 		if($result)
 			$output = array('status' => 'OK');				
 		else
-			//$output = array('status' => 'NOOK');
+			$output = array('status' => 'NOOK');
 	}
 	else
 	{
