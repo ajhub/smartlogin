@@ -18,7 +18,7 @@
 		if($result)
 			$output = array('status' => 'OK');				
 		else
-			$output = array('status' => 'NOOK');
+			//$output = array('status' => 'NOOK');
 	}
 	else
 	{
