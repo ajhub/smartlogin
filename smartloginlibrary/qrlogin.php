@@ -36,7 +36,7 @@
         }
 	$_SESSION['$random']=$result;
 	generateQRwithGoogle($result);
-	function generateQRwithGoogle($url,$widthHeight ='150',$EC_level='L',$margin='0') 
+	function generateQRwithGoogle($url,$widthHeight ='200',$EC_level='L',$margin='0') 
 	{
 	        $url = urlencode($url);
 		echo '<img src="http://chart.apis.google.com/chart?chs='.$widthHeight.'x'.$widthHeight.'&cht=qr&chld='.$EC_level.'|'.$margin.'&chl='.$url.'" " widthHeight="'.$widthHeight.'" widthHeight="'.$widthHeight.'"/>';
