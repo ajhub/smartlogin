@@ -18,13 +18,14 @@
 	$pin=$_POST['pin'];
 	$query = " SELECT * FROM ".$mobiledb." WHERE ".$mobiledb_user." = '$username' ";
 	$result=mysql_query($query,$con);
+	
 	if(!$result)
 		die("Connection Error");
 	else
 	{
 		$row = mysql_fetch_array($result);
-		$deviceid=$row[$mobiledb_device];
-		$secretkey=$row['$mobiledb_key'];		
+		$deviceid=$row["$mobiledb_device"];
+		$secretkey=$row["$mobiledb_key"];		
 		$secret=hash_hmac('sha1',$deviceid, $random);
 		if((strlen($secret)%2)!=0)
 		{
