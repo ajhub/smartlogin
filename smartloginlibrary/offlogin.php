@@ -51,6 +51,6 @@
 		if($finalpin==$pin)
 			header("refresh:1,login_mech.php");	
 		else
-			header("refresh:1,Location:index.php");
+			header("refresh:1,Location:smartlogin.pagodabox.com");
 	}
 ?>
