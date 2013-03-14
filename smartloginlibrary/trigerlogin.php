@@ -15,7 +15,7 @@
 		
 		$query="UPDATE ".randomdb." SET ".$randommdb_user." = '$username' where ".$randomdb_random." = '$random'";
 		$result = mysql_query($query);
-		if(result)
+		if($result)
 			$output = array('status' => 'OK');				
 		else
 			$output = array('status' => 'NOOK');
