@@ -18,11 +18,11 @@
 		if($result)
 			$output = array('status' => 'OK');				
 		else
-			$output = array('status' => 'NOOK');
+			$output = array('status' => 'NOOK1');
 	}
 	else
 	{
-		$output = array('status' => 'NOOK');
+		$output = array('status' => 'NOOK2');
 	}	
    	
 	echo json_encode($output);
