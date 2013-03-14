@@ -13,8 +13,9 @@
 		$row = mysql_fetch_assoc($result);
 		$username = $row["$mobiledb_user"];
 		
-		$query="UPDATE ".$randomdb." SET ".$randommdb_user." = '$username' where ".$randomdb_random." = '$random'";
-		$result = mysql_query($query);
+		$query="UPDATE ".$randomdb." SET  ".$randomdb_user." =  '$username' WHERE  ".$randomdb_random." = '$random'";
+		
+		$result = mysql_query($query,$con);
 		if($result)
 			$output = array('status' => 'OK');				
 		else
