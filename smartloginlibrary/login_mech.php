@@ -8,10 +8,10 @@
 	require("config.php");
 		echo $ico_loc;
 		  session_start();
-		  
+		  $username=$_SESSION['username'];
 		  $_SESSION['Username'] = $username;
           $_SESSION['LoggedIn'] = 1;
-          header("refresh:0,home.php");
+          header("refresh:0,smartlogin.pagodabox.com/home.php");
 	?>
 </head>
 </html>
