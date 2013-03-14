@@ -26,6 +26,18 @@
     // Set following variables to your db's table, which will store random nos and usernames
 	// See step ** for more details.
 	
+	$randomdb = 'random';
+	$randomdb_random = 'randomno';
+	$randomdb_user = 'username';
+	
+	
+	// Set following variables to your db's table, which will store devices registered by users.
+	// See step ** for more details.
+	
+	$mobiledb = 'mobiledb';
+	$mobiledb_device = 'device';
+	$mobiledb_key = 'key' ;	
+	$mobiledb_user = 'username';
 
 	$mobiledb = 'smartlogin_users';
 	$mobiledb_device = 'deviceid';

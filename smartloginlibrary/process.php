@@ -48,7 +48,7 @@
 			$row = mysql_fetch_array($result);
 			$_SESSION['username'] = $row[$mobiledb_user];
 		}
-		header("refresh:1,login_mech.php");	
+		header("refresh:1,login.php");	
 	}
 	else
 	{
