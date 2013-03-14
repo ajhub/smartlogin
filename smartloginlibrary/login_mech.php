@@ -11,7 +11,7 @@
 		  $username=$_SESSION['username'];
 		  $_SESSION['Username'] = $username;
           $_SESSION['LoggedIn'] = 1;
-          header("refresh:0,smartlogin.pagodabox.com/home.php");
+          header("Location: http://smartlogin.pagodabox.com/home.php");
 	?>
 </head>
 </html>
