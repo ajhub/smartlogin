@@ -10,7 +10,7 @@
 	$username = base64_decode($username);
 	$password = "jpL30Nd9ds3H6Zf2+1B2jw==";
 	$password = base64_decode($password);
-	$deviceid = "jpL30Nd9ds3H6Zf2+1B2jw==";//"lA4hpmesbLYRj4XA7lhWQ==";
+	$deviceid = "lA4hpmesbLYRj4XA7lhWQ==";
 	echo "\n".$deviceid;
 	$deviceid = base64_decode($deviceid);
 	echo $deviceid;
