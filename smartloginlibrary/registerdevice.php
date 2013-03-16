@@ -55,7 +55,8 @@
 	{
 		$output = array('status' => "NOOK");
 	}
+	*/
 	echo json_encode($output);
 	mysql_close();
-	*/
+	
 ?>	   
