@@ -29,7 +29,7 @@
 		$secret=hash_hmac('sha1',$deviceid, $random);
 		if((strlen($secret)%2)!=0)
 		{
-				$secret="0".$secret;
+					$secret="0".$secret;
 		}	
 		$key="";
 		for($i=0;$i<strlen($secret);$i++)
@@ -49,6 +49,7 @@
 			$finalpin=$finalpin.$pin1[$i];
 		}
 		$_SESSION['username'] = $username;
+		echo $finalpin;
 		if($finalpin==$pin)
 			header("refresh:1,login_mech.php");	
 		else
