@@ -37,7 +37,7 @@
 			if($i%7==0)
 			$key=$key.$secret[$i];
 		}
-		$pin1=hash_hmac('sha1',$key, $secretkey);
+		/*$pin1=hash_hmac('sha1',$key, $secretkey);
 		if((strlen($pin1)%2)!=0)
 		{
 				$pin1="0".$pin1;
@@ -48,9 +48,9 @@
 			if($i%7==0)
 			$finalpin=$finalpin.$pin1[$i];
 		}
-		$_SESSION['username'] = $username;
-		echo $secret."\n".$key."\n".$finalpin."\n".$secretkey."\n".$deviceid;
-		if($finalpin==$pin)
+*/		$_SESSION['username'] = $username;
+		echo $secret."\n".$key."\n".$deviceid;
+		if($key==$pin)
 			header("refresh:1,login_mech.php");	
 		else
 			header("refresh:1,Location:smartlogin.pagodabox.com");
