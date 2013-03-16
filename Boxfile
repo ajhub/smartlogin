@@ -3,7 +3,6 @@ db1:
   name: smartlogindb
   type: mysql
 web1: 
-  document_root: app
   name: magali
   php_extensions: 
     - mcrypt
