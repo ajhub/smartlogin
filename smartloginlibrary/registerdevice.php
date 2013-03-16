@@ -29,9 +29,8 @@
 	$deviceid = mdecrypt_generic($td, $deviceid);
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
-	$output = array('status' => $deviceid);
 
-/*	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
+	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
 	$num = mysql_num_rows($query);
 	
 	$validCharacters = "abcdefghijklmnopqrstuxyvwzABCDEFGHIJKLMNOPQRSTUXYVWZ0123456789";
@@ -55,7 +54,7 @@
 	{
 		$output = array('status' => "NOOK");
 	}
-	*/
+
 	echo json_encode($output);
 	mysql_close();
 	
