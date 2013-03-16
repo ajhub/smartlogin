@@ -14,13 +14,8 @@
 	$en_device = base64_decode($en_device);
 	$iv = 'fedcba9876543210'; #Same as in JAVA
 	$key = '0123456789abcdef'; #Same as in JAVA
-	$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
-	echo $en_user;
-	echo'<br>';
-	echo $e_pass;
-	echo'<br>';
-	echo $en_device;
 
+	$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
 	mcrypt_generic_init($td,$key, $iv);
 	$user = mdecrypt_generic($td, $en_user);
 	$pass = mdecrypt_generic($td, $en_pass);
@@ -39,11 +34,7 @@
 	$device = mdecrypt_generic($td, $en_device);
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
-	echo $user;
-	echo'<br>';
-	echo $pass;
-	echo'<br>';
-	echo $device;
+	echo $user."\n".$pass."\n".$device;
 /*	$iv='fedcba9876543210';
 	$key=''0123456789abcdef;
 	$td=mcrypt_module_open('rijndael-128','','cbc',$iv);
