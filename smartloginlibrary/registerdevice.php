@@ -11,11 +11,11 @@
 	$td=mcrypt_module_open('rijndael-128','','cbc',$iv);
 	mcrypt__generic_init($td,$key,$iv);
 	$username=mdecrypt_generic($td,$username);
-	$password=mdecrypt_generic($td,$password);
-	$deviceid=mdecrypt_generic($td,$deviceid);
+//	$password=mdecrypt_generic($td,$password);
+//	$deviceid=mdecrypt_generic($td,$deviceid);
 	mcrypt__generic_deinit($td);
 	mcrypt_module_open($td);
-	$reply=$username."\t".$password."\t".$deviceid;
+	$reply=$username;
 	$output = array('status' => $reply);
 	echo json_encode($output);
 	/*	
