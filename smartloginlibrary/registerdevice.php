@@ -3,26 +3,32 @@
 	
 	require("config.php");
 	
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$deviceid = $_POST['deviceid'];
-/*	$en_user="ApWPPSQDpqhYlfzp5+rWyg==";	
-	$en_user = base64_decode($code);
-
+//	$username = $_POST['username'];
+//	$password = $_POST['password'];
+//	$deviceid = $_POST['deviceid'];
+	$en_user = "ApWPPSQDpqhYlfzp5+rWyg==";	
+	$en_user = base64_decode($en_user);
+	$en_pass = "jpL30Nd9ds3H6Zf2+1B2jw=="
+	$en_pass = base64_decode($en_pass);
+	$en_device = "lA4hpmesbLYRj4XA7lhWQ=="
+	$en_device = base64_decode($en_device);
 	//$password = $_POST['password'];
 	//$deviceid = $_POST['deviceid'];
-$iv = 'fedcba9876543210'; #Same as in JAVA
-$key = '0123456789abcdef'; #Same as in JAVA
-	
-$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
-mcrypt_generic_init($td,$key, $iv);
-$decrypted = mdecrypt_generic($td, $code);
-mcrypt_generic_deinit($td);
-mcrypt_module_close($td);
-echo $code;
-echo'<br>';
-echo $decrypted;
-*/	$iv='fedcba9876543210';
+	$iv = 'fedcba9876543210'; #Same as in JAVA
+	$key = '0123456789abcdef'; #Same as in JAVA
+	$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
+	mcrypt_generic_init($td,$key, $iv);
+	$user = mdecrypt_generic($td, $en_user);
+	$pass = mdecrypt_generic($td, $en_pass);
+	$device = mdecrypt_generic($td, $en_device);
+	mcrypt_generic_deinit($td);
+	mcrypt_module_close($td);
+	echo $user;
+	echo'<br>';
+	echo $pass;
+	echo'<br>';
+	echo $device;
+/*	$iv='fedcba9876543210';
 	$key=''0123456789abcdef;
 	$td=mcrypt_module_open('rijndael-128','','cbc',$iv);
 	mcrypt__generic_init($td,$key,$iv);
