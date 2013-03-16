@@ -3,14 +3,11 @@
 	
 	require("config.php");
 	
-//	$username = $_POST['username'];
-//	$password = $_POST['password'];
-//	$deviceid = $_POST['deviceid'];
-	$username = "ApWPPSQDpqhYlfzp5+rWyg==";	
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+	$deviceid = $_POST['deviceid'];
 	$username = base64_decode($username);
-	$password = "jpL30Nd9ds3H6Zf2+1B2jw==";
 	$password = base64_decode($password);
-	$deviceid = "jpL30Nd9ds3H6Zf2+1B2jw==";//"lA4hpmesbLYRj4XA7lhWQ==";
 	$deviceid = base64_decode($deviceid);
 	$iv = 'fedcba9876543210'; #Same as in JAVA
 	$key = '0123456789abcdef'; #Same as in JAVA
