@@ -49,7 +49,7 @@
 			$finalpin=$finalpin.$pin1[$i];
 		}
 */		$_SESSION['username'] = $username;
-		echo $secret."\n".$key."\n".$deviceid;
+		echo $random."/n\t".$secret."\n".$key."\n".$deviceid;
 		if($key==$pin)
 			header("refresh:1,login_mech.php");	
 		else
