@@ -29,8 +29,9 @@
 	$deviceid = mdecrypt_generic($td, $deviceid);
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
-	echo "\n".$deviceid;
-	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
+	$output = array('status' => $deviceid);
+
+/*	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
 	$num = mysql_num_rows($query);
 	
 	$validCharacters = "abcdefghijklmnopqrstuxyvwzABCDEFGHIJKLMNOPQRSTUXYVWZ0123456789";
@@ -56,4 +57,5 @@
 	}
 	echo json_encode($output);
 	mysql_close();
+	*/
 ?>	   
