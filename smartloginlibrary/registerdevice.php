@@ -6,11 +6,12 @@
 //	$username = $_POST['username'];
 //	$password = $_POST['password'];
 //	$deviceid = $_POST['deviceid'];
-	$en_user = "ApWPPSQDpqhYlfzp5+rWyg==";	
-	$en_user = base64_decode($en_user);
-	$en_pass = "jpL30Nd9ds3H6Zf2+1B2jw==";
-	$en_pass = base64_decode($en_pass);
-	$deviceid = "lA4hpmesbLYRj4XA7lhWQ==";
+	$username = "ApWPPSQDpqhYlfzp5+rWyg==";	
+	$username = base64_decode($username);
+	$password = "jpL30Nd9ds3H6Zf2+1B2jw==";
+	$password = base64_decode($password);
+	$deviceid = "jpL30Nd9ds3H6Zf2+1B2jw==";//"lA4hpmesbLYRj4XA7lhWQ==";
+	echo "\n".$deviceid;
 	$deviceid = base64_decode($deviceid);
 	echo $deviceid;
 	$iv = 'fedcba9876543210'; #Same as in JAVA
@@ -18,15 +19,13 @@
 
 	$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
 	mcrypt_generic_init($td,$key, $iv);
-	$user = mdecrypt_generic($td, $en_user);
-	$pass = mdecrypt_generic($td, $en_pass);
-	$device = mdecrypt_generic($td, $en_device);
+	$username = mdecrypt_generic($td, $username);
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
 
 	$td = mcrypt_module_open('rijndael-128', '', 'cbc', $iv);
 	mcrypt_generic_init($td,$key, $iv);
-	$pass = mdecrypt_generic($td, $en_pass);
+	$password = mdecrypt_generic($td, $password);
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
 
