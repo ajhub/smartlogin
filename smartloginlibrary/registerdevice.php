@@ -7,23 +7,11 @@
 //	$password = $_POST['password'];
 //	$deviceid = $_POST['deviceid'];
 	$en_user = "ApWPPSQDpqhYlfzp5+rWyg==";	
-	echo $en_user;
-	echo'<br>';
 	$en_user = base64_decode($en_user);
-	echo $en_user;
-	echo'<br>';
 	$en_pass = "jpL30Nd9ds3H6Zf2+1B2jw==";
-	echo $en_pass;
-	echo'<br>';
 	$en_pass = base64_decode($en_pass);
-	echo $en_pass;
-	echo'<br>';
 	$en_device = "lA4hpmesbLYRj4XA7lhWQ==";
-	echo $en_device;
-	echo'<br>';
 	$en_device = base64_decode($en_device);
-	echo $en_device;
-	echo'<br>';
 	//$password = $_POST['password'];
 	//$deviceid = $_POST['deviceid'];
 	$iv = 'fedcba9876543210'; #Same as in JAVA
