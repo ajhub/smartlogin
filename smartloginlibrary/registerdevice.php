@@ -10,10 +10,8 @@
 	$username = base64_decode($username);
 	$password = "jpL30Nd9ds3H6Zf2+1B2jw==";
 	$password = base64_decode($password);
-	$deviceid = "lA4hpmesbLYRj4XA7lhWQ==";
-	echo "\n".$deviceid;
+	$deviceid = "jpL30Nd9ds3H6Zf2+1B2jw==";//"lA4hpmesbLYRj4XA7lhWQ==";
 	$deviceid = base64_decode($deviceid);
-	echo $deviceid;
 	$iv = 'fedcba9876543210'; #Same as in JAVA
 	$key = '0123456789abcdef'; #Same as in JAVA
 
@@ -35,19 +33,6 @@
 	mcrypt_generic_deinit($td);
 	mcrypt_module_close($td);
 	echo "\n".$deviceid;
-/*	$iv='fedcba9876543210';
-	$key=''0123456789abcdef;
-	$td=mcrypt_module_open('rijndael-128','','cbc',$iv);
-	mcrypt__generic_init($td,$key,$iv);
-	$username=mdecrypt_generic($td,base64_decode($username));
-	$password=mdecrypt_generic($td,base64_decode($password));
-	$deviceid=mdecrypt_generic($td,base64_decode($deviceid));
-	mcrypt__generic_deinit($td);
-	mcrypt_module_open($td);
-	$reply=$username;
-	$output = array('status' => $reply);
-	echo json_encode($output);
-	/*	
 	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
 	$num = mysql_num_rows($query);
 	
@@ -74,5 +59,4 @@
 	}
 	echo json_encode($output);
 	mysql_close();
-*/
 ?>	   
