@@ -6,6 +6,15 @@
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$deviceid = $_POST['deviceid'];
+	$iv='fedcba9876543210';
+	$key=''0123456789abcdef;
+	$td=mcrypt_module_open('rijndael-128','','cbc',$iv);
+	mcrypt__generic_init($td,$key,$iv);
+	$username=mdecrypt_generic($td,$username);
+	$password=mdecrypt_generic($td,$password);
+	$deviceid=mdecrypt_generic($td,$deviceid);
+	mcrypt__generic_deinit($td);
+	mcrypt_module_open($td);
 	
 	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
 	$num = mysql_num_rows($query);
@@ -33,4 +42,5 @@
 	}
 	echo json_encode($output);
 	mysql_close();
+	
 ?>	   

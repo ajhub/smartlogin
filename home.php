@@ -48,7 +48,7 @@ if(!empty($_SESSION['Username']))
 							<ul class="dropdown-menu">
 								<form name = "logout" class="navbar-form pull-left" method="post" style="padding: 10px 30px 30px 30px;" action="logout.php" >
 									<li><a href="logout.php">Logout</a></li>
-								</form>
+								</form>ad
 							</ul>
 								
 						</li>
