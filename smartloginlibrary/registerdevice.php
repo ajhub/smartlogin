@@ -15,7 +15,10 @@
 	$deviceid=mdecrypt_generic($td,$deviceid);
 	mcrypt__generic_deinit($td);
 	mcrypt_module_open($td);
-	
+	$reply=$username."\t".$password."\t".$deviceid;
+	$output = array('status' => $reply);
+	echo json_encode($output);
+	/*	
 	$query = mysql_query("SELECT * FROM ".$logindb." WHERE ".$logindb_user." = '$username' AND ".$logindb_pass." = '$password'");
 	$num = mysql_num_rows($query);
 	
@@ -42,5 +45,5 @@
 	}
 	echo json_encode($output);
 	mysql_close();
-	
+*/	
 ?>	   
