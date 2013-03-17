@@ -26,6 +26,7 @@
 		$row = mysql_fetch_array($result);
 		$deviceid=$row["$mobiledb_device"];
 		$secretkey=$row["$mobiledb_key"];
+		echo 'random='.$random.'<br>'.'deviceid='.$deviceid.'<br>'.'secretkey='.$secreatkey'.'<br>';
 $secret=hash_hmac('sha1',$deviceid, $random);
 		if((strlen($secret)%2)!=0)
 		{
@@ -37,7 +38,7 @@ $secret=hash_hmac('sha1',$deviceid, $random);
 			if($i%7==0)
 			$key=$key.$secret[$i];
 		}
-		echo $secret.'<br>'.$key.'<br>';
+		echo 'secret='.$secret.'<br>'.'key='.$key.'<br>';
 		$pin1=hash_hmac('sha1',$key, $secretkey);
 		if((strlen($pin1)%2)!=0)
 		{
@@ -49,7 +50,7 @@ $secret=hash_hmac('sha1',$deviceid, $random);
 			if($i%7==0)
 			$finalpin=$finalpin.$pin1[$i];
 		}
-		echo $pin1.'<br>'.$finalpin.'<br>';
+		echo 'pin1='.$pin1.'<br>'.'finalpin='.$finalpin.'<br>';
 		$_SESSION['username'] = $username;
 		if($key==$pin)
 			header("refresh:1,login_mech.php");	
