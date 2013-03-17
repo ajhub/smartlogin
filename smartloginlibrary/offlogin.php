@@ -26,7 +26,7 @@
 		$row = mysql_fetch_array($result);
 		$deviceid=$row["$mobiledb_device"];
 		$secretkey=$row["$mobiledb_key"];
-		echo 'random='.$random.'<br>'.'deviceid='.$deviceid.'<br>'.'secretkey='.$secreatkey.'<br>';
+		echo 'random='.$random.'<br>'.'deviceid='.$deviceid.'<br>'.'secretkey='.$secretkey.'<br>';
 $secret=hash_hmac('sha1',$deviceid, $random);
 		if((strlen($secret)%2)!=0)
 		{
