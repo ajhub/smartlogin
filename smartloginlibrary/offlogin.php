@@ -64,13 +64,11 @@
 		
 		if($finalpin==$pin)
 		{
-			header("refresh:1,login_mech.php");
-				echo 'YEs';
+			header("refresh:0,login_mech.php");
 		}
 		else
 		{
-			header("refresh:1,Location:smartlogin.pagodabox.com");
-			echo 'no';
+			header("Location: http://smartlogin.pagodabox.com/index.php");
 		}
 	}
 ?>
