@@ -30,35 +30,47 @@
 		//$deviceid='359828047180659'; //$row[$mobiledb_device];
 		//$secretkey='dJJwP4avZRUbJsG';//$row['$mobiledb_key'];		
 		
-		echo 'random='.$random.'<br>'.'deviceid='.$deviceid.'<br>'.'secretkey='.$secretkey.'<br>';
-$secret=hash_hmac('sha1',$deviceid, $random);
+		
+		$secret=hash_hmac('sha1',$deviceid, $random);
+		
 		if((strlen($secret)%2)!=0)
 		{
 				$secret="0".$secret;
 		}	
 		$key="";
+		
 		for($i=0;$i<strlen($secret);$i++)
 		{
 			if($i%7==0)
 			$key=$key.$secret[$i];
 		}
-		echo 'secret='.$secret.'<br>'.'key='.$key.'<br>';
+		
 		$pin1=hash_hmac('sha1',$key, $secretkey);
+		
 		if((strlen($pin1)%2)!=0)
 		{
 				$pin1="0".$pin1;
 		}	
+		
 		$finalpin="";
+		
 		for($i=0;$i<strlen($pin1);$i++)
 		{
 			if($i%7==0)
 			$finalpin=$finalpin.$pin1[$i];
 		}
-		echo 'pin1='.$pin1.'<br>'.'finalpin='.$finalpin.'<br>';
+		
 		$_SESSION['username'] = $username;
-		if($key==$pin)
-			header("refresh:1,login_mech.php");	
+		
+		if($finalpin==$pin)
+		{
+			header("refresh:1,login_mech.php");
+				echo 'YEs';
+		}
 		else
+		{
 			header("refresh:1,Location:smartlogin.pagodabox.com");
+			echo 'no';
+		}
 	}
 ?>
