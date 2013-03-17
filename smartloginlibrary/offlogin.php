@@ -23,12 +23,12 @@
 		die("Connection Error");
 	else
 	{
-		//$row = mysql_fetch_array($result);
-		//$deviceid=$row["$mobiledb_device"];
-		//$secretkey=$row["$mobiledb_key"];
+		$row = mysql_fetch_array($result);
+		$deviceid=$row["$mobiledb_device"];
+		$secretkey=$row["$mobiledb_key"];
 		
-		$deviceid='359828047180659'; //$row[$mobiledb_device];
-		$secretkey='dJJwP4avZRUbJsG';//$row['$mobiledb_key'];		
+		//$deviceid='359828047180659'; //$row[$mobiledb_device];
+		//$secretkey='dJJwP4avZRUbJsG';//$row['$mobiledb_key'];		
 		
 		echo 'random='.$random.'<br>'.'deviceid='.$deviceid.'<br>'.'secretkey='.$secretkey.'<br>';
 $secret=hash_hmac('sha1',$deviceid, $random);
